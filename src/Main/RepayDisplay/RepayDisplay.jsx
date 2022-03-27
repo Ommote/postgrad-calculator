@@ -5,8 +5,9 @@ const RepayDisplay = (props) => {
   return (
     <div>
       <h4>
-        Based on your monthly earnings of £{searchAmount / 12}, you will repay £
-        {repayAmount} per month on your Postgraduate loan.
+        Based on your monthly earnings of £{Math.ceil(searchAmount / 12)}, you
+        will repay £{Math.floor(repayAmount)} per month on your Postgraduate
+        loan.
       </h4>
     </div>
   );
